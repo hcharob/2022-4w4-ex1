@@ -414,23 +414,60 @@ COMPOSANTS
   font-weight: bold;
 }
 
-.site__footer section {
-  color: white;
+.site__footer {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.7rem;
 }
 
-.site__footer-adresse {
-  width: 20%;
+.site__footer section {
+  color: white;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #292929;
+}
+
+@media screen and (min-width: 500px) {
+  .site__footer section {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .site__footer-adresse {
+    width: 20%;
+  }
 }
 
 .site__footer-par3 {
-  width: 20%;
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 500px) {
+  .site__footer-par3 {
+    width: 20%;
+  }
 }
 
 .site__footer-copyright {
+  font-size: 0.7rem;
   color: white;
+  background-color: black;
+  height: 4rem;
+  margin-top: 2rem;
   text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .site__footer-copyright {
+    font-size: 1rem;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .site__header {
@@ -493,6 +530,8 @@ COMPOSANTS
 .recherche__input {
   border: none;
   outline: none;
+  background-color: #691212;
+  border-radius: 5px;
 }
 
 .recherche__bouton {

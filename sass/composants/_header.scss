@@ -14,14 +14,14 @@
             padding: 0 2rem 0 2rem;
         }
         h2{
-            font-size:clamp(1rem, 2vw, 4rem);
-            
+            font-size:clamp(1rem, 2vw, 4rem);  
         }
     }
 }
 
 .site__main > h2 {
     padding-left: 2rem; 
+
 }
 
 .util{
@@ -53,6 +53,8 @@
     &__input{
         border:none;
         outline:none;
+        background-color: rgb(105, 18, 18);
+        border-radius: 5px;
     }
     &__bouton{
         top: 0;
