@@ -1,10 +1,10 @@
-$color__background-body: #18384B;
-$color__colorbackground-header: #3CA6A6;
-$color__colorbackground-barre: #2A7A8C;
-$color__colorbackground-main: #2E4D59;
-$color__colorbackground-footer: #3CA6A6;
+$color__background-body: white;
+$color__colorbackground-header: rgb(171, 33, 33);
+$color__colorbackground-barre: rgba(171, 33, 33, 0.4);
+$color__colorbackground-main: rgb(170, 170, 170);
+$color__colorbackground-footer: rgba(171, 33, 33, 0.4);
 
 $color__link: #00f;
 $color__link-visited: rgb(91, 91, 185);
-$color__link-hover: #00a;
-$background__link-hover: rgb(190, 190, 243);
+$color__link-hover: black;
+$background__link-hover: rgba(171, 33, 33, 0.6);

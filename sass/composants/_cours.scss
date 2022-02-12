@@ -14,26 +14,12 @@
         width: 40%;
     }
     @media screen and (min-width : $largeur__media-desktop) {
-        width: 28%;
+        width: 30%;
     }
-
-    background-color: #b7b6af;
-    transition: 0.2s;
-}
-
-.cours__carte:nth-of-type(even){
-    background-color: #cecdc5;
-    
-}
-
-
-.cours__carte:hover{
-    box-shadow: 10px 10px #1b1b1b;
-    transform: translate(-5px, -5px);
 }
 
 .cours__carte h2{
-    color: #2D2D34;
+    color: #000;
     text-align: left;
 }
 
