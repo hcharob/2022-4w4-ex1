@@ -414,6 +414,25 @@ COMPOSANTS
   font-weight: bold;
 }
 
+.site__footer section {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.site__footer-adresse {
+  width: 20%;
+}
+
+.site__footer-par3 {
+  width: 20%;
+}
+
+.site__footer-copyright {
+  color: white;
+  text-align: center;
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
@@ -434,11 +453,15 @@ COMPOSANTS
 
 .site__header__titre h1 {
   font-size: clamp(2rem, 4vw, 6rem);
-  padding: 0 2rem 0 0;
+  padding: 0 2rem 0 2rem;
 }
 
 .site__header__titre h2 {
   font-size: clamp(1rem, 2vw, 4rem);
+}
+
+.site__main > h2 {
+  padding-left: 2rem;
 }
 
 .util {
@@ -451,7 +474,16 @@ COMPOSANTS
 @media screen and (min-width: 500px) {
   .util {
     width: 25%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
   }
+}
+
+.icone {
+  margin-left: -10rem;
+  padding-right: 2rem;
 }
 
 .recherche {
@@ -522,7 +554,7 @@ COMPOSANTS
 
 .menu-item a {
   display: block;
-  padding: 3px;
+  padding: 0.1rem 0 0 1rem;
   text-decoration: none;
 }
 
@@ -540,7 +572,7 @@ LAYOUT
 
 .site__footer {
   grid-area: footer;
-  background-color: rgba(171, 33, 33, 0.4);
+  background-color: black;
 }
 
 .site__main {

@@ -11,12 +11,17 @@
         align-items: center;
         h1{
             font-size:clamp(2rem, 4vw, 6rem);
-            padding: 0 2rem 0 0;
+            padding: 0 2rem 0 2rem;
         }
         h2{
             font-size:clamp(1rem, 2vw, 4rem);
+            
         }
     }
+}
+
+.site__main > h2 {
+    padding-left: 2rem; 
 }
 
 .util{
@@ -24,18 +29,27 @@
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
+    
     @media screen and (min-width: $largeur__media-tablette){
         width: 25%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 2rem;
+        
     }
 }
 .icone{
-    &__lien{
-        svg{}
-    }
+    margin-left: -10rem;
+    padding-right: 2rem;
+    // &__lien{
+    //     svg{}
+    // }
 }
 
 .recherche{
     position: relative;
+    
     &__input{
         border:none;
         outline:none;
@@ -51,7 +65,7 @@
         display:flex;
         align-items: center;
         justify-content: center;
-        svg{}
+        // svg{}
     }
 
 }
