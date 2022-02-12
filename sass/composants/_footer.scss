@@ -2,17 +2,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 0.7rem;
+    font-size:clamp(0.7rem, 1.5vw, 1rem);  
 
     section {
         color: white;
         margin-top: 2rem;
-      
         display: flex;
         justify-content: space-around;
         background-color: rgb(41, 41, 41);
+        padding: 5px;
         @media screen and (min-width: $largeur__media-tablette){
-            margin-top: 5rem;     
+            margin-top: 5rem;    
         }
     } 
 }
@@ -32,7 +32,7 @@
 }
 
 .site__footer-copyright {
-    font-size: 0.7rem;
+    font-size:clamp(0.7rem, 1.5vw, 1rem);  
     color: white;
     background-color: black;
     height: 4rem;
@@ -40,7 +40,6 @@
     text-align: center;
 
     @media screen and (min-width: $largeur__media-tablette){
-    font-size: 1rem; 
     display: flex;
     margin: 0;
     justify-content: center;

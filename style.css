@@ -2,7 +2,7 @@
 /**
 Theme name: exercice-1_Charbonneau-Robichaud_Hervee
 Author: Charbonneau-Robichaud_Hervee
-Description: Un quatrieme exemple de thème dans le cadre du cours 4W4
+Description: Exercice 1 dans le cadre du cours de conception d'interface et développement web
 Version: 1.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
@@ -418,7 +418,7 @@ COMPOSANTS
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 
 .site__footer section {
@@ -427,6 +427,7 @@ COMPOSANTS
   display: flex;
   justify-content: space-around;
   background-color: #292929;
+  padding: 5px;
 }
 
 @media screen and (min-width: 500px) {
@@ -452,7 +453,7 @@ COMPOSANTS
 }
 
 .site__footer-copyright {
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
   color: white;
   background-color: black;
   height: 4rem;
@@ -462,7 +463,6 @@ COMPOSANTS
 
 @media screen and (min-width: 500px) {
   .site__footer-copyright {
-    font-size: 1rem;
     display: flex;
     margin: 0;
     justify-content: center;
@@ -486,11 +486,19 @@ COMPOSANTS
 .site__header__titre {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 .site__header__titre h1 {
   font-size: clamp(2rem, 4vw, 6rem);
-  padding: 0 2rem 0 2rem;
+  text-align: center;
+  padding: 0 1rem 1rem 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .site__header__titre h1 {
+    padding: 0 2rem 0 2rem;
+  }
 }
 
 .site__header__titre h2 {
@@ -504,7 +512,7 @@ COMPOSANTS
 .util {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
 }
 
@@ -518,13 +526,28 @@ COMPOSANTS
   }
 }
 
-.icone {
-  margin-left: -10rem;
-  padding-right: 2rem;
+.icone svg {
+  height: clamp(20px, 2vw, 2vw);
+  width: clamp(20px, 2vw, 2vw);
+}
+
+@media screen and (min-width: 500px) {
+  .icone {
+    margin-left: -10rem;
+    padding-right: 2rem;
+  }
 }
 
 .recherche {
   position: relative;
+  width: 90%;
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 500px) {
+  .recherche {
+    width: 70%;
+  }
 }
 
 .recherche__input {
@@ -532,6 +555,8 @@ COMPOSANTS
   outline: none;
   background-color: #691212;
   border-radius: 5px;
+  width: 100%;
+  height: 100%;
 }
 
 .recherche__bouton {
@@ -539,7 +564,7 @@ COMPOSANTS
   right: 0;
   border: none;
   outline: none;
-  height: 20px;
+  height: 80%;
   width: 20px;
   position: absolute;
   display: flex;
@@ -558,6 +583,7 @@ COMPOSANTS
 #burger {
   position: absolute;
   transition: transform .3s;
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 500px) {
@@ -568,6 +594,14 @@ COMPOSANTS
 
 #chk-burger:checked ~ .menu-principal-container {
   display: block;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 500px) {
+  #chk-burger:checked ~ .menu-principal-container {
+    padding-top: 0;
+  }
 }
 
 .menu-principal-container {

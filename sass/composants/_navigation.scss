@@ -7,6 +7,9 @@
 #burger {
     position: absolute;
     transition:transform .3s;
+    padding-top: 10px;
+    
+
     @media screen and (min-width: $largeur__media-tablette) {
         display: none;
     }
@@ -14,6 +17,12 @@
 
 #chk-burger:checked ~ .menu-principal-container{
     display: block;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+
+    @media screen and (min-width: $largeur__media-tablette) {
+        padding-top: 0;
+    }
 }
 .menu-principal-container{
     padding: 20px 0 0 0;
